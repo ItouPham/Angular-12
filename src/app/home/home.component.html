@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div>
+    <h1>Test Angular</h1>
+    <input type="text" [(ngModel)]="number">
+    <h2>Text: {{number}}</h2>
+    <button (click)="resetText()"> Reset</button>
+    <div *ngFor="let num of number">
+        <li>{{num}}</li>
+    </div>
+   
+</div>
